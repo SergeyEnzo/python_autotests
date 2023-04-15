@@ -54,6 +54,7 @@ class CheckBoxPage(BasePage):
             lst.append(item.text)
         return str(lst).replace(' ', ''). replace('doc', ''). replace('.', '').lower()
 
+
     def get_output_result(self):
         result_list = self.elements_are_present(self.locators.OUTPUT)
         lst = []
